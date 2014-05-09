@@ -17,7 +17,7 @@ RUN adduser --disabled-password --home=/rails --gecos "" rails
 # copy the Rails app
 # we assume we have cloned the "docrails" repository locally
 #  and it is clean; see the "prepare" script
-ADD docrails/guides/code/getting_started /rails
+ADD rails /rails
 
 RUN chown rails -R /rails
 
