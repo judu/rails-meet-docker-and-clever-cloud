@@ -29,6 +29,6 @@ RUN su rails -c /setup
 # copy the start script
 ADD scripts/start /start
 
-EXPOSE 3000
+EXPOSE 8080
 USER rails
 CMD /start
